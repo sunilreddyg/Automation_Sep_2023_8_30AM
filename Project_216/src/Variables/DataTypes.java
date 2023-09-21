@@ -27,7 +27,8 @@ public class DataTypes
 		int x=100;
 		int y=200;
 		int z=x+y; //Here + is a operator conduct addition between two number
-		System.out.println("total value is ---> "+z);
+		System.out.println("Total value is --> "+z);
+		System.out.println(x+y);
 		
 		
 		/*
@@ -92,7 +93,11 @@ public class DataTypes
 		// Escape Sequence /t create tab space at Console
 
 		System.out.println(mobile.length());
-		System.out.println(mobile.startsWith("9"));
+		System.out.println(mobile.startsWith("90"));
+		
+		
+		
+		
 		
 	}
 

@@ -19,15 +19,21 @@ public class StaticMethods
 	{
 		System.out.println("method3 executed");
 	}
+
 	
 	public static void main(String[] args) 
 	{
 		//With in class static methods can call from main method
-		//directly using it's class name
+		//directly using it's method name
 		method1();
 		method2();
 		method3();
 		
+		//To Calling static method from outside class
+		// Syntax:-->  Classname.methodname();
+		StaticMethods.method1();
+		StaticMethods.method2();
+		StaticMethods.method3();
 	}
 	
 	

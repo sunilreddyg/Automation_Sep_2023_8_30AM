@@ -10,15 +10,11 @@ public class LaunchChrome {
 		
 		/*
 		 * Download chromedriver.exe file
-		 * 
-		 * 		=> https://www.selenium.dev/downloads/
-		 * 		=> Scroll down a page until receive Browsers
-		 * 		=> Click  to open list of browser drivers
-		 * 		=> under Chrome browser click on documentation link
-		 * 		=> Check what version of chrome browser is installed
 		 * 	
-		 * 					Open ChromeBrowser --> click on settings
-		 * 					---> Help Menu----> About google chrome
+		 *  	Find a Current Chrome browser version at your computer
+		 * 			Open ChromeBrowser --> click on settings
+		 * 			---> Help Menu----> About google chrome
+		 * 
 		 * 		=> https://googlechromelabs.github.io/chrome-for-testing/
 		 * 		=> Click on <<stable>> link under channels
 		 * 		=> Copy URL w.r.t Operating system and Hotspot size
@@ -32,7 +28,6 @@ public class LaunchChrome {
 		
 		//Setting Runtime Environment Variable Path 
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MINDQ\\Desktop\\recent_drivers\\chromedriver.exe");
-		
 		
 		//Launching chrome browser and storing reference into WebDriver Interface Class
 		WebDriver driver=new ChromeDriver();

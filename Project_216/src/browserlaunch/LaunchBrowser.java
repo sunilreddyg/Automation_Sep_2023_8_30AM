@@ -1,10 +1,10 @@
 package browserlaunch;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class LaunchBrowser {
+public class LaunchBrowser 
+{
 
 	public static void main(String[] args) {
 		
@@ -24,7 +24,12 @@ public class LaunchBrowser {
 		
 		/*
 		 * WebDriver is a interface class. It is designed to
-		 * manipulate all browser instances
+		 * manipulate all browser instances..
+		 * 
+		 * 	Advantages:-->
+		 * 		WebDriver support cross browser automation. it means
+		 * 		User can design code for one browser and user can
+		 * 		use same code to run at differnet browsers
 		 */
 
 	}

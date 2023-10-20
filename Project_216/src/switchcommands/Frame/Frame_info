@@ -103,6 +103,8 @@ How to Switch one frame to another frame
 
 	3. Apply switch to Second Frame
 		driver.switchTo().frame(String framename);
+		
+	4. Repeat second step to get controls back to mainpage
 ---------------------------------------------------------------------------->
 How to Switch to parent frame:---->
 	under parent frame switch required between two sub frames. To get
@@ -126,7 +128,56 @@ Practice Websites:-->
 
 	http://www.maths.surrey.ac.uk/explore/nigelspages/frame2.htm
 	
+Example:--> How to Switch between two differnet frames
+<html>
+<body>
+		<iframe id="f1">
+			<a href="http://fb.com"> Facebook </a>
+		</iframe>
 
+		<iframe id="f2">
+			<span>Login Verified </span>
+		</iframe>
+
+</body>	
+</html>
+
+sytnax:-->
+
+		driver.switchTo().frame("f1");
+		driver.findElement(By.linkText("Facebook")).click();
+		
+		driver.switchTo().Defaultcontent();
+
+		driver.switchTo().frame("f2");
+		//Read Text Under F2 frame
+
+		driver.switchTo().Defaultcontent();
+
+=====================================================================
+Example:--> How to switch to child frame under parent frame.
+<html>
+<body>
+		<h1>Header</h1>
+		<iframe id="f1">
+			
+			<iframe id="f2">
+				<a href="http://fb.com"> Facebook </a>	
+			</iframe>
+		</iframe>
+
+</body>	
+</html>
+
+Syntax:-->
+		driver.switchTo().frame("f1");
+		driver.switchTo().frame("f2");
+		driver.findElement(By.linkText("Facebook")).click();
+
+		//Get Controls back from Parent Frame to Child Frame
+		driver.switchTo().ParentFrame();
+		//Get Controls back from Parent Frame to Webpage
+		driver.switchTo().Defaultcontent();
 
 
 

@@ -4,21 +4,24 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
 import resuablecommands.HelperClass;
-
 public class RunTest 
 {
 	WebDriver driver;
-	String pageurl="https://opensource-demo.orangehrmlive.com/web/index.php/auth/requestPasswordResetCode";
-	@Test
-	public void Test1()
+	String url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	Testcaselogin tclogin;
+	public RunTest() 
 	{
 		HelperClass.setUpDriver();
 		driver=HelperClass.getDriver();
-		HelperClass.openPage(pageurl);
-		ResetPassword rp=new ResetPassword(driver);
-		rp.verifypageheader();
-		rp.enterusername("info@ogrm.com");
-		rp.clickresetpassword();
+		tclogin=new Testcaselogin(driver);
+	}
+	
+	
+	@Test
+	public void Test1()
+	{
+		HelperClass.openPage(url);
+		tclogin.verifyloginwithinvaliddata();
 	}
 
 }

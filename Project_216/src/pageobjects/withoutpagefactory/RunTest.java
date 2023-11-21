@@ -1,5 +1,6 @@
 package pageobjects.withoutpagefactory;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
@@ -17,11 +18,18 @@ public class RunTest
 	}
 	
 	
-	@Test
+	@Ignore
 	public void Test1()
 	{
 		HelperClass.openPage(url);
 		tclogin.verifyloginwithinvaliddata();
+	}
+	
+	@Test
+	public void Test2()
+	{
+		HelperClass.openPage(url);
+		tclogin.Verifyloginwithvaliddata();
 	}
 
 }

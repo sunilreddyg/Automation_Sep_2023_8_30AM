@@ -37,10 +37,10 @@ public class Testcaselogin
 		if(login.verifyLoginpageDisplayed())
 		{
 			login.userlogin("Admin", "admin123");
-			if(login.verifyErrorDisplayed())
-				System.out.println("Error is displayed");
+			if(account.verifyloginSuccessful())
+				System.out.println("Login is Successful");
 			else
-				System.out.println("Error is not displayed");
+				System.out.println("Login failed");
 		}
 	}
 }

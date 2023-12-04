@@ -2,7 +2,7 @@ package oops.polymorphism.overloading;
 
 public class TestOverloading 
 {
-	//Methdod with no parameter
+	//Methdod woth no parameter
 	public void methodA()
 	{
 		System.out.println("No Parameter");

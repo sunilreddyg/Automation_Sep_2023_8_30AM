@@ -22,7 +22,6 @@ public class ChildA extends Parent
 		Parent ref=new ChildA();
 		ref.method1();    //Method from parent class
 		
-		
 	}
 
 }

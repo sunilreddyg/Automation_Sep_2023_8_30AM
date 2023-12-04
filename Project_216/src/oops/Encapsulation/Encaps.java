@@ -9,7 +9,6 @@ public class Encaps
 	private String password;
 	public String emid="MQ001";
 	
-	
 	public String getName() 
 	{
 		return name;
@@ -17,23 +16,19 @@ public class Encaps
 	public void setName(String name) 
 	{
 		this.name = name;
+		System.out.println("user--> "+name+" --->Logged in at --> "+new Date().toString());
 	}
+	
 	public String getPassword() 
 	{
 		return password;
 	}
+	
 	public void setPassword(String password) 
 	{
 		this.password = password;
 	}
-
 	
-	public static void main(String[] args) {
-		Encaps obj=new Encaps();
-		obj.setName("Sunil");
-		String Realname=obj.getName();
-		System.out.println(Realname);
-	}
 	
 
 }

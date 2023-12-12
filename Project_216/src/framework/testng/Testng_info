@@ -116,6 +116,8 @@ Note:-->
 	in your own order specified at testng class. we can set priority for method
 
 	* priority index start from zero
+	* Once your starting giving priority, Better you can define
+	  for every @Test annotation...
 
 ---------------------------*******************_________________________________
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MytestngSuite2">
+	<test name="DefaultTest">
+		<classes>
+			<class name="framework.testng.TestSuite.Class1">
+					<methods>
+						<include name="tc003"/>
+						<include name="tc001"/>
+					</methods>
+			</class>
+			
+			<class name="framework.testng.TestSuite.Class2">
+					<methods>
+						<exclude name="tc004"/>
+						<!-- It will Ignore test execution -->
+					</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,46 @@
+Apache POI:--->
+	
+		An opensource library to read,write,designing at
+		Microsoft documents..
+
+Download Apache POI:-->
+
+	  URL:--->  https://archive.apache.org/dist/poi/release/bin/
+	  			Download  latest  version --> poi-bin-5.0.0-20210120.zip   
+	  			Download zip format file
+	  			unzip file to project libraries
+	  			configure all executable jar files to java-selenium-project.
+	  			
+	
+	  	Note:--> POI supports each document to follow idependant classes.
+	  	
+	  			=> Below classes support Mircosoft Excel 
+	  			HSSF-Workbook    [97-2003] -----> .xls
+	  			XSSF-Workbook    [2007 above]  ----> .xlsx
+	  			
+	Microsoft Excel
+working with Microsoft Excel Spreadsheets.
+HSSF: Horrible Spreadsheet Format – 
+Supports working with 97-2003 and before Excel Spreadsheet 
+XLS file format
+
+XSSF: XML SpreadSheet Format – 
+Supports Office Open XML file format of Excel 
+Spreadsheet XLSX file formats
+
+Microsoft Word
+working with Microsoft Word Documents.
+
+HWPF: Horrible Word Processor Format – 
+read and write Microsoft Word 97-2003 DOC file format
+
+XWPF: XML Word Format – similar feature set to HWPF, 
+but for Office Open XML DOCX file format
+	  				  						
+How to prepare test data file:-->
+
+Step1:--> Create TestData folder
+Step2:--> Create Inputdata Excel workbook. 
+Step3:--> Open Workbook and prepare testdata at rows and cells
+Step4:--> Save workbook before use it.
+=====================================================================================>

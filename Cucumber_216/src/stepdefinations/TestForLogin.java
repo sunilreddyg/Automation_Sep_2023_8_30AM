@@ -49,6 +49,16 @@ public class TestForLogin
 	{
 	    System.out.println("Error message displayed");
 	}
+	
+	@When("user leave password as blank")
+	public void user_leave_password_as_blank() 
+	{
+	   System.out.println("Left password field is empty");
+	}
+	@Then("verify password error message displayed")
+	public void verify_password_error_message_displayed() {
+	   System.out.println("Password error message displayed");
+	}
 
 
 
